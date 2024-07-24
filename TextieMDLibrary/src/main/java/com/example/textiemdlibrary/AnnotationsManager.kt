@@ -5,12 +5,13 @@ import android.util.Log
 class AnnotationsManager {
     private val TAG = "AnnotationsManager"
 
-    fun applyBold(text: String, selectionStart: Int, selectionEnd: Int, annotation: String = "**"): String {
+    fun applyBold(text: String, selectionStart: Int, selectionEnd: Int): String {
 
         /**
          * Function to apply $annotation around the selected text
          */
 
+        val annotation = "**"
         Log.d(TAG, "applyBold called with text: $text, selectionStart: $selectionStart, selectionEnd: $selectionEnd")
 
         val start = minOf(selectionStart, selectionEnd)
@@ -41,12 +42,12 @@ class AnnotationsManager {
         }
     }
 
-    fun isBold(text: String, selectionStart: Int, selectionEnd: Int, annotation: String = "**"): Boolean {
+    fun isBold(text: String, selectionStart: Int, selectionEnd: Int): Boolean {
 
         /**
          * Function to check if the selected text is bolded
          */
-
+        val annotation = "**"
         Log.d(TAG, "isBold called with text: $text, selectionStart: $selectionStart, selectionEnd: $selectionEnd")
 
         val start = minOf(selectionStart, selectionEnd)
@@ -63,12 +64,12 @@ class AnnotationsManager {
         return beforeCursor.endsWith(annotation) && afterCursor.startsWith(annotation)
     }
 
-    fun applyItalics(text: String, selectionStart: Int, selectionEnd: Int, annotation: String = "~~"): String {
+    fun applyItalics(text: String, selectionStart: Int, selectionEnd: Int): String {
 
         /**
          * Function to apply $annotation around the selected text
          */
-
+        val annotation = "~~"
         val start = minOf(selectionStart, selectionEnd)
         val end = maxOf(selectionStart, selectionEnd)
 
@@ -93,12 +94,12 @@ class AnnotationsManager {
         }
     }
 
-    fun isItalics(text: String, selectionStart: Int, selectionEnd: Int, annotation: String): Boolean {
+    fun isItalics(text: String, selectionStart: Int, selectionEnd: Int): Boolean {
 
         /**
          * Function to check if the selected text is italicized
          */
-
+        val annotation = "~~"
         val start = minOf(selectionStart, selectionEnd)
         val end = maxOf(selectionStart, selectionEnd)
 
@@ -113,12 +114,12 @@ class AnnotationsManager {
         return beforeCursor.endsWith(annotation) && afterCursor.startsWith(annotation)
     }
 
-    fun applyStrikethrough(text: String, selectionStart: Int, selectionEnd: Int, annotation: String = "--"): String {
+    fun applyStrikethrough(text: String, selectionStart: Int, selectionEnd: Int): String {
 
         /**
          * Function to apply $annotation around the selected text
          */
-
+        val annotation = "--"
         val start = minOf(selectionStart, selectionEnd)
         val end = maxOf(selectionStart, selectionEnd)
 
@@ -143,12 +144,12 @@ class AnnotationsManager {
         }
     }
 
-    fun isStrikethrough(text: String, selectionStart: Int, selectionEnd: Int, annotation: String = "--"): Boolean {
+    fun isStrikethrough(text: String, selectionStart: Int, selectionEnd: Int): Boolean {
 
         /**
          * Function to check if the selected text is struckthrough
          */
-
+        val annotation = "--"
         val start = minOf(selectionStart, selectionEnd)
         val end = maxOf(selectionStart, selectionEnd)
 
@@ -165,12 +166,12 @@ class AnnotationsManager {
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    fun applyMonospace(text: String, selectionStart: Int, selectionEnd: Int, annotation: String = "``"): String {
+    fun applyMonospace(text: String, selectionStart: Int, selectionEnd: Int): String {
 
         /**
          * Function to apply $annotation around the selected text
          */
-
+        val annotation = "``"
         val start = minOf(selectionStart, selectionEnd)
         val end = maxOf(selectionStart, selectionEnd)
 
@@ -195,12 +196,13 @@ class AnnotationsManager {
         }
     }
 
-    fun isMonospace(text: String, selectionStart: Int, selectionEnd: Int, annotation: String = "``"): Boolean {
+    fun isMonospace(text: String, selectionStart: Int, selectionEnd: Int): Boolean {
 
         /**
          * Function to check if the selected text is monospace
          */
 
+        val annotation = "``"
         val start = minOf(selectionStart, selectionEnd)
         val end = maxOf(selectionStart, selectionEnd)
 
