@@ -25,15 +25,15 @@ fun TextPlayground(){
 
         ))
     }
-    val visualTransformation = remember {
-        TextEditorVisualTransformer()
-    }
+//    val visualTransformation = remember {
+//        TextEditorVisualTransformer()
+//    }
     TextField(
         value = text,
         onValueChange = {
             text = it
         },
-        visualTransformation = visualTransformation,
+        //visualTransformation = visualTransformation,
         textStyle = TextStyle()
     )
 }
