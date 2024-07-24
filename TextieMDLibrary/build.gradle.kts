@@ -53,7 +53,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.donald-okara" // Use your GitHub username
                 artifactId = "TextieMDLibrary" // Choose a unique artifact ID
-                version = "1.0.3" // Update with your library version
+                version = "1.0.4" // Update with your library version
             }
         }
     }
