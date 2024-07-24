@@ -29,7 +29,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "1.8"
     }
 }
 
@@ -38,11 +38,12 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.ui.text.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
+// ... (Other configurations in your build.gradle.kts)
 
 afterEvaluate {
     publishing {
@@ -51,7 +52,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.donald-okara" // Use your GitHub username
                 artifactId = "TextieMDLibrary" // Choose a unique artifact ID
-                version = "1.0.0" // Update with your library version
+                version = "1.0.1" // Update with your library version
             }
         }
     }
