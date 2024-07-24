@@ -23,3 +23,4 @@ dependencyResolutionManagement {
 rootProject.name = "TextieMDLibrary"
 include(":app")
 include(":TextieMDLibrary")
+include(":mylibrary")
