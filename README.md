@@ -59,4 +59,4 @@ val newText = annotationsManager.applyBold("This is **bold** text.", 8, 14)
 val isBold = annotationsManager.isBold(newText, 8, 14)
 ```
 
-For more details, refer to the complete (documentation)[Documentation.md] or the source code.
+For more details, refer to the complete [documentation](Documentation.md) or the source code.
