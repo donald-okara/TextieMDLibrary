@@ -2,6 +2,8 @@
 
 TextieMDLibrary provides tools for applying Markdown-like formatting to text in Jetpack Compose applications, including styles like bold, italics, strikethrough, monospace, headings, and hashtags.
 
+[video](Screen_recording_20240724_113848.mp4)
+
 ### Key Components
 
 #### `TextEditorVisualTransformer`
