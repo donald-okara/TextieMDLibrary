@@ -68,13 +68,13 @@ fun transformItalics(text: AnnotatedString): Transformation {
         for (match in matches) {
             val matchRange = match.range
             builder.addStyle(
-                style = SpanStyle(color = Color.Transparent, baselineShift = BaselineShift.Superscript, fontSize = 0.0.sp),
+                style = SpanStyle(color = Color.Gray, baselineShift = BaselineShift.Superscript, fontSize = 2.sp),
                 matchRange.first,
                 matchRange.first + 2
             )
             builder.addStyle(style = SpanStyle(fontStyle = FontStyle.Italic), matchRange.first + 2, matchRange.last - 1)
             builder.addStyle(
-                style = SpanStyle(color = Color.Transparent, baselineShift = BaselineShift.Superscript, fontSize = 0.0.sp),
+                style = SpanStyle(color = Color.Gray, baselineShift = BaselineShift.Superscript, fontSize = 2.sp),
                 matchRange.last - 1,
                 matchRange.last + 1
             )
@@ -92,13 +92,13 @@ fun transformBold(text: AnnotatedString): Transformation {
         for (match in matches) {
             val matchRange = match.range
             builder.addStyle(
-                style = SpanStyle(color = Color.Transparent, baselineShift = BaselineShift.Superscript, fontSize = 0.0.sp),
+                style = SpanStyle(color = Color.Gray, baselineShift = BaselineShift.Superscript, fontSize = 2.sp),
                 matchRange.first,
                 matchRange.first + 2
             )
             builder.addStyle(style = SpanStyle(fontWeight = FontWeight.Bold), matchRange.first + 2, matchRange.last - 1)
             builder.addStyle(
-                style = SpanStyle(color = Color.Transparent, baselineShift = BaselineShift.Superscript, fontSize = 0.0.sp),
+                style = SpanStyle(color = Color.Gray, baselineShift = BaselineShift.Superscript, fontSize = 2.sp),
                 matchRange.last - 1,
                 matchRange.last + 1
             )
@@ -116,13 +116,13 @@ fun transformStrikeThrough(text: AnnotatedString): Transformation {
         for (match in matches) {
             val matchRange = match.range
             builder.addStyle(
-                style = SpanStyle(color = Color.Transparent, baselineShift = BaselineShift.Superscript, fontSize = 0.0.sp),
+                style = SpanStyle(color = Color.Gray, baselineShift = BaselineShift.Superscript, fontSize = 2.sp),
                 matchRange.first,
                 matchRange.first + 2
             )
             builder.addStyle(style = SpanStyle(fontStyle = FontStyle.Italic, textDecoration = TextDecoration.LineThrough, fontWeight = FontWeight.SemiBold), matchRange.first + 2, matchRange.last - 1)
             builder.addStyle(
-                style = SpanStyle(color = Color.Transparent, baselineShift = BaselineShift.Superscript, fontSize = 0.0.sp),
+                style = SpanStyle(color = Color.Gray, baselineShift = BaselineShift.Superscript, fontSize = 2.sp),
                 matchRange.last - 1,
                 matchRange.last + 1
             )
@@ -141,13 +141,13 @@ fun transformMonospace(text: AnnotatedString): Transformation {
         for (match in matches) {
             val matchRange = match.range
             builder.addStyle(
-                style = SpanStyle(color = Color.Transparent, baselineShift = BaselineShift.Superscript, fontSize = 0.0.sp),
+                style = SpanStyle(color = Color.Gray, baselineShift = BaselineShift.Superscript, fontSize = 2.sp),
                 matchRange.first,
                 matchRange.first + 2
             )
             builder.addStyle(style = SpanStyle(fontFamily = FontFamily.Monospace, fontWeight = FontWeight.SemiBold, background = Color.Gray), matchRange.first + 2, matchRange.last - 1)
             builder.addStyle(
-                style = SpanStyle(color = Color.Transparent, baselineShift = BaselineShift.Superscript, fontSize = 0.0.sp),
+                style = SpanStyle(color = Color.Gray, baselineShift = BaselineShift.Superscript, fontSize = 2.sp),
                 matchRange.last - 1,
                 matchRange.last + 1
             )

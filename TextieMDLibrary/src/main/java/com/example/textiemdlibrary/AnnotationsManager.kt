@@ -164,7 +164,6 @@ class AnnotationsManager {
         return beforeCursor.endsWith(annotation) && afterCursor.startsWith(annotation)
     }
 
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     fun applyMonospace(text: String, selectionStart: Int, selectionEnd: Int): String {
 
